@@ -1,0 +1,141 @@
+body,main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0px;
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+   
+}
+header{
+    font-family: 'Poppins', sans-serif;
+    z-index: 4;
+    color: aliceblue;
+    font-size: xx-large;
+}
+body[data-nav="true"]>main{
+    transform:translate(0,-50%);
+    z-index: 0;
+}
+body[data-nav="true"]>.outer>.inner{
+    transform:translate(0,0)scale(1);
+
+ 
+}
+@keyframes logo1 {
+    from{
+          transform:translateY(0);
+    }
+    to{
+        transform: translateY(-500vh);
+    }
+}
+.intro{
+    animation: logo1 30s ;
+    animation-timing-function:ease-out ;
+    animation-fill-mode: forwards;
+    position: fixed;
+    height: 100vh;
+    z-index: 5;
+    width: 100%;
+    background-color: aliceblue;
+    overflow: hidden;
+    transition: 2s;
+} 
+.credits{
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    font-family: 'Poppins', sans-serif;
+    z-index: 4;
+    color: aliceblue;
+    font-size: x-large;
+
+}
+main{
+    background-image: url('https://1.bp.blogspot.com/-CbWLumSsnHA/X3NCN8Y97SI/AAAAAAAAbdM/6_nItNbt0jcQvkFzogyKeqUGJjMyM57rACLcBGAsYHQ/d/v3-290920-rocket-minimalist-desktop-wallpaper-hd.png');
+    background-size: cover;
+    z-index: 2;
+    background-position: center;
+}
+.nav-toggle{
+    z-index: 3;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    left: 50%;
+    bottom: 3rem;
+    background-color: bisque;
+    border: 0px;
+    border-radius: 5rem;
+    outline: none;
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 35%);
+    cursor: pointer;
+    transform: translateX(-50%); 
+    transition: transform,background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+.outer{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;   
+    background-color: #161616;
+    width: 100%;
+    z-index: -1;
+    height: 50%;
+
+}
+.inner{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(70%)scale(0.9);
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    
+   
+}
+.cards{
+    height: 16rem;
+width: 20rem;
+    background-color: rgb(25, 17, 7);
+   
+     position: relative;
+
+}
+.nav-toggle:hover{
+    transform: translateX(-50%)scale(1.04);
+}
+.nav-toggle:active{
+    transform: translateX(-50%)scale(0.96);
+}
+
+.c1{
+   
+   
+    background-image: url('https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536__480.jpg');
+background-position: center;
+background-size: cover;
+
+
+}
+.c2{
+    background-image: url('https://media.istockphoto.com/id/1312566254/photo/contact-us-concept-icon-telephone-address-and-email-on-blue-background-3d-illustration.jpg?b=1&s=170667a&w=0&k=20&c=DkGuYrbbcZc3_zbRZKOq6qhjZ-xNqEkVzU1RIlrabmY=');
+    background-position: center;
+    background-size: cover;
+}
+.c3{
+   
+   
+    background-image: url('https://img.freepik.com/premium-photo/opened-book-bible-background_112554-164.jpg?w=360');
+background-position: center;
+background-size: cover;
+
+
+}
+
